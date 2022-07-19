@@ -1,6 +1,6 @@
 
 #' @title Center matrix rows by subsets of columns 
-#' @description  
+#' @description  Centers a matrix's rows by subsets of columns
 #' @param m a matrix
 #' @param groups list of character vectors specifying the column ids to center by.  Default: split_by_sample_names(colnames(m))
 #' @param by how centering should be performed. One of 'mean' or 'median'. Default: 'mean' 

@@ -1,7 +1,7 @@
-# scalop
-Neftel et.al 2019, single cell analysis code
+# Tiny scalop
+A stripped down version of the Neftel et.al 2019, single cell analysis code.
 
-The repository is a forked repository containing all the code used in the analysis of:
+The repository is a forked repository containing only the code relevant, to scoring single cells used in the analysis of:
 
 **Neftel et.al (2019) - An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma**
 
