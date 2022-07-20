@@ -13,6 +13,8 @@ colcenter = function(m, by = 'mean') {
     scale(m, center = by, scale = F)
 }
 
+
+
 #' @title Center a matrix row-wise 
 #' @description Center a matrix row-wise 
 #' @param m a matrix or Matrix
@@ -27,6 +29,8 @@ rowcenter = function(m, by = 'mean') {
     else stopifnot(is.numeric(by) & length(by) == nrow(m))
     t(scale(t(m), center = by, scale = F))
 }
+
+
 
 #' @title Number of non-zero values per column
 #' @description Number of non-zero values per column
@@ -63,6 +67,8 @@ coldetected = function(m, value = 0,method = c('notequal','greaterthan','lesstha
     stats::setNames(res, colnames(m))
 }
 
+
+
 #' @title Number of non-zero values per row
 #' @description Number of non-zero values per row
 #' @param m matrix 
@@ -98,6 +104,8 @@ rowdetected = function(m, value = 0,method = c('notequal','greaterthan','lesstha
     stats::setNames(res, rownames(m))
 }
 
+
+
 #' @title <dim> for many matrices
 #' @description Returns the result of dim for every matrix in a list
 #' @param mats a list of matrices (or a single matrix)
@@ -112,6 +120,8 @@ dims <- function(mats) {
     # if mats is a list of matrices:
     sapply(mats, dim, simplify = T)
 }
+
+
 
 
 #' @title <ncol> for many matrices
@@ -130,6 +140,8 @@ ncols <- function(mats) {
 }
 
 
+
+
 #' @title <nrow> for many matrices
 #' @description Returns the result of nrow for every matrix in a list
 #' @param mats a list of matrices (or a single matrix)
@@ -145,11 +157,15 @@ nrows <- function(mats) {
     sapply(mats, nrow, simplify = T)
 }
 
+
+
 #' @export
 has_dim <- function(x) {
     if (is.data.frame(x)) x = as.matrix(x)
     !is.null(attr(x, "dim"))
 }
+
+
 
 #' @export
 split_matrix = function(m, by) {
@@ -159,25 +175,35 @@ split_matrix = function(m, by) {
     list(x = m[, by, drop = F], y = m[, !colnames(m) %in% by, drop = F])
 }
 
+
+
 #' @export
 have_equal_nrows = function(m1, m2) {
     nrow(m1) == nrow(m2)
 }
+
+
 
 #' @export
 have_equal_rownames = function(m1, m2) {
     all(rownames(m1) == rownames(m2))
 }
 
+
+
 #' @export
 is_square = function(m) {
     nrow(m) == ncol(m)
 }
 
+
+
 #' @export
 have_equal_dims = function(m1, m2) {
     identical(dim(m1), dim(m2))
 }
+
+
 
 #' @export
 is_cor = function(m) {
@@ -188,6 +214,8 @@ is_cor = function(m) {
     }
     FALSE
 }
+
+
 
 #' @export
 is_symm = function(m) {

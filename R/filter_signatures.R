@@ -1,5 +1,3 @@
-
-
 #' @title Filter Out Lowly-Correlated Genes from Signature(s)  
 #' @description This function removes signature genes whose expression level is poorly correlated to the signature score. This is relevant if the signatures themselves were defined from a different dataset, as might be the case in applying single-cell signatures to bulk, or in moving between datasets generated with different protocols (e.g. single-nuclei RNA seq. vs single-cell RNA seq.).
 #' @param m expression matrix of genes X cells to score. Not centered.

@@ -1,4 +1,3 @@
-
 #' @title Filter genes in sigs according to reference 
 #' @description Filter genes in sigs according to reference 
 #' @param sigs a character vector of genes or list of character vectors to filter 
@@ -69,6 +68,9 @@ filter_sigs = function(sigs, ref, conserved = 0.7) {
     sigs
 }
 
+
+
+
 #' @title Basic Scoring of Matrix by Gene sigs 
 #' @description Average expression level of each column in m for (each) sig(s) in <sigs>.
 #' @param m a non-centered matrix of genes X cells/samples. The matrix will be row-centered internally prior to scoring.
@@ -82,6 +84,9 @@ baseScores = function(m, sigs, conserved.genes = 0.7) {
     sigs = filter_sigs(sigs, ref = rownames(m), conserved = conserved.genes)
     sapply(sigs, function(sig) colMeans(m[sig, , drop = F]))
 }
+
+
+
 
 
 #' @title Score a Matrix by Gene sigs (Signatures) 
@@ -105,8 +110,8 @@ sigScores = function(m,
                      sigs,
                      groups = NULL,
                      center.rows = TRUE,
-                     center = T,
-                     expr.center = T,
+                     center = TRUE,
+                     expr.center = TRUE,
                      expr.bin.m = NULL,
                      expr.bins = NULL,
                      expr.sigs = NULL,
@@ -146,8 +151,8 @@ sigScores = function(m,
                       sigs,
                       groups = NULL,
                       center.rows = TRUE,
-                      center = T,
-                      expr.center = T,
+                      center = TRUE,
+                      expr.center = TRUE,
                       expr.bin.m = NULL,
                       expr.bins = NULL,
                       expr.sigs = NULL,
@@ -203,6 +208,8 @@ sigScores = function(m,
     rownames(scores) = rows
     scores
 }
+
+
 
 #' @title Score a Matrix with Marker Gene Sets Of Normal Cell Types 
 #' @description Score a Matrix with Marker Gene Sets Of Normal Cell Types. Wrapper around scalop::sigScores. Please see `?scalop::sigScores` for more details

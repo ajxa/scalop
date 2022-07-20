@@ -1,13 +1,13 @@
 Package: tiny_scalop
-Title: Subset of the Single Cell Analysis Operations (scalop) package
+Title: Neoplastic cell state scoring from the scalop package
 Version: 1.0
 Authors@R: 
-    person(given = "Julie",
-           family = "Laffy",
+    person(given = "Shoaib",
+           family = "Ajaib",
            role = c("aut", "cre"),
-           email = "julie.laffy@weizmann.ac.il",
+           email = "umsaa@leeds.ac.uk",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: A toolbox for analyses of single-cell RNA-seq data. High-level functions include hca() for hierarchical clustering analysis and dea() for differential expression analysis. 
+Description: A set of function for scoring neoplastic cell states in glioblastoma cells. This package provides a subset of functions from the parent package (scalop).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -18,52 +18,12 @@ Depends:
     R (>= 2.10)
 biocViews:
 Imports:
-    Homo.sapiens,
-    stats,
-    limma,
-    tidyr,
-    dplyr,
     zeallot,
-    grid,
-    ggplot2,
-    Rcpp,
-    methods,
     magrittr,
-    ggpubr,
-    gtable,
-    tibble,
-    matrixStats,
-    grDevices,
-    graphics,
-    gridExtra,
-    stringr,
-    patchwork,
-    rlang,
-    scales,
-    reshape2,
-    biomaRt,
-    AnnotationDbi,
-    GO.db,
-    org.Hs.eg.db,
-    TxDb.Hsapiens.UCSC.hg19.knownGene,
-    calibrate,
-    mixtools,
-    RColorBrewer,
-    nor1mix,
-    ggrepel,
-    clusterProfiler,
-    msigdbr,
-    irlba,
-    Rtsne,
-    scran,
-    igraph,
-    plyr,
-    pkgdown
-Remotes: jlaffy/brewerland
+    dplyr
 Suggests: 
     testthat (>= 2.1.0),
     knitr,
+    matrixStats,
     rmarkdown
 VignetteBuilder: knitr
-LinkingTo: 
-    Rcpp

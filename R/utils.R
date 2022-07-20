@@ -45,7 +45,8 @@ is_number = function(x) {
 #' @rdname unpack-assign-back
 #' @name %->%
 #' @keywords internal
-`%->%`
+# `%->%`
+NULL
 
 #' Destructuring assignment
 #'
@@ -55,7 +56,8 @@ is_number = function(x) {
 #' @rdname unpack-assign
 #' @name %<-%
 #' @keywords internal
-`%<-%`
+# `%<-%`
+NULL
 
 #' Pipe operator
 #'
