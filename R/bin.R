@@ -38,6 +38,7 @@
 #' @param nbin numeric value. How many bins should be created? Default: 30
 #' @param n numeric value for the number of control values to return per value in Group. Default: 100
 #' @param replace boolean value. Allow bin sampling to be done with replacement. Default: F
+#' @param ... optional arguments to pass to bins.
 #' @return a character vector of length n * length(Group), containing the binmatched values for the values (gene names) in Group.
 #' @rdname binmatch
 #' @export 

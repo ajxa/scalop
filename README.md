@@ -1,9 +1,8 @@
-# Tiny scalop
-A stripped down version of the Neftel et.al 2019, single cell analysis code.
+# tinyscalop
 
-The repository is a forked repository containing only the code relevant, to scoring single cells used in the analysis of:
+The repository is was originally forked from **https://github.com/jlaffy/scalop**. 
+The original repository contained code for scoring neoplastic cell states in single cell and bulk, glioblastoma tumours samples, and also additional code for things like differential expression analysis and clustering described in the following paper: 
 
 **Neftel et.al (2019) - An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma**
 
-
-The code for cell-state scoring and cell-state assignment is used in other repositories. 
+Because I was only interested in the scoring the neoplastic cell states and also did not want the pain of building complied code this is why this repo exists.

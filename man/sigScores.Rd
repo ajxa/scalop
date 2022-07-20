@@ -27,6 +27,8 @@ sigScores(
 
 \item{groups}{if scores should be calculated intra-tumour, a list of cell IDs by sample. Default: NULL}
 
+\item{center.rows}{should the rows of m be centered? default is TRUE.}
+
 \item{center}{Only relevant if expr.center = FALSE. If TRUE, normalise the scores by subtracting  the mean expression level across all genes (i.e. centering). No scaling is performed. Set to FALSE i f not desired. If expr.center = T and center = T, expr.center takes precedence. Default: T}
 
 \item{expr.center}{normalise scores by subtracting scores generated from expression-bin-matched sigs. Set to FALSE if not desired. If expr.center = T and center = T, expr.center takes precedence. Default: T}

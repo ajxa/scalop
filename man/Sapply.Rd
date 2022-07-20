@@ -6,6 +6,17 @@
 \usage{
 Sapply(X, FUN, ..., simplify = FALSE, USE.NAMES = TRUE)
 }
+\arguments{
+\item{X}{a vector (atomic or list) or an expression object.}
+
+\item{FUN}{the function to be applied to each element of X.}
+
+\item{...}{optional arguments to FUN.}
+
+\item{simplify}{logical or character string; should the result be simplified to a vector.}
+
+\item{USE.NAMES}{use the names of X? defualt: TRUE}
+}
 \description{
 sapply wrapper
 }

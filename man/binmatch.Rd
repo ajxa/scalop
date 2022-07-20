@@ -29,6 +29,8 @@ binmatch(
 \item{n}{numeric value for the number of control values to return per value in Group. Default: 100}
 
 \item{replace}{boolean value. Allow bin sampling to be done with replacement. Default: F}
+
+\item{...}{optional arguments to pass to bins.}
 }
 \value{
 a character vector of length n * length(Group), containing the binmatched values for the values (gene names) in Group.

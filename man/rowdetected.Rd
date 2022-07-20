@@ -13,6 +13,12 @@ rowdetected(
 }
 \arguments{
 \item{m}{matrix}
+
+\item{value}{default is 0}
+
+\item{method}{method of counting non-zero values per row}
+
+\item{counts}{is m a counts matrix?}
 }
 \value{
 numeric vector

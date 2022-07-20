@@ -1,18 +1,17 @@
-Package: tiny_scalop
+Package: tinyscalop
 Title: Neoplastic cell state scoring from the scalop package
 Version: 1.0
 Authors@R: 
     person(given = "Shoaib",
            family = "Ajaib",
            role = c("aut", "cre"),
-           email = "umsaa@leeds.ac.uk",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: A set of function for scoring neoplastic cell states in glioblastoma cells. This package provides a subset of functions from the parent package (scalop).
+           email = "umsaa@leeds.ac.uk"
+           )
+Description: A set of functions for scoring neoplastic cell states in glioblastoma cells.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/jlaffy/scalop
-BugReports: https://github.com/jlaffy/scalop/issues
+URL: https://github.com/ajxa/tiny_scalop
 RoxygenNote: 7.2.0
 Depends:
     R (>= 2.10)
@@ -20,7 +19,8 @@ biocViews:
 Imports:
     zeallot,
     magrittr,
-    dplyr
+    dplyr,
+    reshape2
 Suggests: 
     testthat (>= 2.1.0),
     knitr,

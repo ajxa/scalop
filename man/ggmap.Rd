@@ -6,6 +6,11 @@
 \usage{
 ggmap(m, ...)
 }
+\arguments{
+\item{m}{a matrix or Matrix}
+
+\item{...}{further option to pass to reshape2::melt}
+}
 \description{
 gmap wrapper
 }
